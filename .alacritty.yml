@@ -1,0 +1,59 @@
+colors:
+  primary:
+    background: '#2b3339'
+    foreground: '#d3c6aa'
+  normal:
+    black:   '#4b565c'
+    red:     '#e67e80'
+    green:   '#a7c080'
+    yellow:  '#dbbc7f'
+    blue:    '#7fbbb3'
+    magenta: '#d699b6'
+    cyan:    '#83c092'
+    white:   '#d3c6aa'
+  bright:
+    black:   '#4b565c'
+    red:     '#e67e80'
+    green:   '#a7c080'
+    yellow:  '#dbbc7f'
+    blue:    '#7fbbb3'
+    magenta: '#d699b6'
+    cyan:    '#83c092'
+    white:   '#d3c6aa'
+
+window:
+  decorations:
+    none
+  padding:
+    x: 20
+    y: 20
+  # opacity: 0.9
+  # startup_mode: Fullscreen 
+  #font:
+  # normal:
+  # bold:
+  # italic:
+
+env:
+  TERM: xterm-256color
+
+font:
+  normal:
+    family: CaskaydiaCove Nerd Font
+  bold:
+    family: CaskaydiaCove Nerd Font
+  italic:
+    family: CaskaydiaCove Nerd Font
+
+cursor:
+  style:
+    shape: Beam
+  blinking: Off
+
+working_directory: None
+
+#shell:
+#  program: /bin/zsh
+#args:
+
+# alacritty VI mode

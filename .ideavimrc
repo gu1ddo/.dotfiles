@@ -1,0 +1,72 @@
+" Assert space is mapped
+nnoremap <SPACE> <Nop>
+
+" ----- Leader key -----
+
+" Set leader key as SPACE
+let mapleader=" "
+
+" ----- Plugins -----
+
+" Blink yanked area
+set highlightedyank
+
+let g:highlightedyank_highlight_duration = "100"
+
+"NerdTree
+set nerdtree
+nmap <leader>e :NERDTreeToggle<CR>
+
+" Commentary
+set commentary
+
+" Surround
+set surround
+
+" Multiple Cursors
+" set multiple-cursors
+
+" ----- Bindings -----
+" scroll
+
+"Change to terminal
+"nmap <leader>t :action ActivateTerminalToolWindow<CR>
+
+" Tabs
+nmap <S-l> :action NextTab<CR>
+nmap <S-h> :action PreviousTab<CR>
+
+" Close tab
+nmap <leader>c :quit <CR>
+
+"Split window
+nmap <leader>h :action SplitHorizontally<CR>
+nmap <leader>v :action SplitVertically<CR>
+
+" Cursor don't go all the way to top/bottom
+set scrolloff=10
+
+" Relative numbers for better vertical navigation
+set number relativenumber
+
+" No error bell from ideavim
+set visualbell
+
+set hlsearch
+set incsearch
+set ignorecase smartcase
+
+" ----- Built in help ------
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+
+" Find more examples here: https://jb.gg/share-ideavimrc<CR><CR>
