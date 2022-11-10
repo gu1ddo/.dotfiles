@@ -30,16 +30,4 @@ curl -fsSL https://repo.charm.sh/apt/gpg.key | sudo gpg --dearmor -o /etc/apt/ke
 echo "deb [signed-by=/etc/apt/keyrings/charm.gpg] https://repo.charm.sh/apt/ * *" | sudo tee /etc/apt/sources.list.d/charm.list
 sudo apt update && sudo apt install glow`
 
-# Zim - zsh framework
-
-https://zimfw.sh/docs/
-
-`curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh`
-
-# Starship
-
-https://spaceship-prompt.sh/getting-started/
-
-`zmodule spaceship-prompt/spaceship-prompt --name spaceship --no-submodules;zimfw install`
-
 
