@@ -12,7 +12,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = false
-lvim.colorscheme = "catppuccin"
+lvim.colorscheme = "onedark"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
@@ -169,6 +169,10 @@ lvim.builtin.treesitter.highlight.enable = true
 lvim.plugins = {
   { "tpope/vim-surround" },
 
+  { "mateusbraga/vim-spell-pt-br" },
+
+  { "navarasu/onedark.nvim" },
+
   { "sainnhe/gruvbox-material" },
 
   { "sainnhe/everforest" },
@@ -215,10 +219,12 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.opt.scrolloff = 8
 vim.opt.relativenumber = true
 vim.opt.swapfile = false
-lvim.transparent_window = true
+-- lvim.transparent_window = true
 
 vim.opt.linebreak = true
 vim.opt.cursorline = false
 vim.opt.colorcolumn = '80'
 -- vim.opt.clipboard = ""
+
+vim.opt.spelllang = { "en", "pt_br"}
 
