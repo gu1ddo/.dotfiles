@@ -29,9 +29,12 @@ set surround
 " ----- Bindings -----
 " scroll
 
+"Change to terminal
+"nmap <leader>t :action ActivateTerminalToolWindow<CR>
+
 " Tabs
-nmap <tab> :action NextTab<CR>
-nmap <S-tab> :action PreviousTab<CR>
+nmap <S-l> :action NextTab<CR>
+nmap <S-h> :action PreviousTab<CR>
 
 " Close tab
 nmap <leader>c :quit <CR>
