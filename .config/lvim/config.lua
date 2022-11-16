@@ -171,6 +171,8 @@ lvim.plugins = {
 
   {"mateusbraga/vim-spell-pt-br"},
 
+  { "Mofiqul/adwaita.nvim" },
+
   { "sainnhe/gruvbox-material" },
 
   { "sainnhe/everforest" },
