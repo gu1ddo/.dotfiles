@@ -1,4 +1,7 @@
 # Instalation
+sudo nano /etc/dnf/dnf.conf
+max_parallel_downloads=10
+fastestmirror=True
 
 ## Animations
 
