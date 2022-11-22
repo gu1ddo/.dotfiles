@@ -11,8 +11,8 @@ an executable
 
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save = false
-lvim.colorscheme = "catppuccin"
+lvim.format_on_save = true
+lvim.colorscheme = "dracula"
 
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -64,7 +64,7 @@ lvim.builtin.which_key.mappings["t"] = {
   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Workspace Diagnostics" },
 }
- 
+
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = true
@@ -168,18 +168,15 @@ lvim.builtin.treesitter.highlight.enable = true
 
 -- Additional Plugins
 lvim.plugins = {
-  { "tpope/vim-surround" },
 
-  {"mateusbraga/vim-spell-pt-br"},
+  { "mateusbraga/vim-spell-pt-br" },
+  { "dracula/vim" },
 
   { "Mofiqul/adwaita.nvim" },
-
   { "sainnhe/gruvbox-material" },
-
   { "sainnhe/everforest" },
-
   { "catppuccin/nvim" },
-
+  { "tpope/vim-surround" },
   { "tpope/vim-repeat" },
 
 }
@@ -205,7 +202,6 @@ vim.opt.swapfile = false
 lvim.transparent_window = true
 
 vim.opt.linebreak = true
-vim.opt.cursorline = false
+vim.opt.cursorline = true
 vim.opt.colorcolumn = '80'
--- vim.opt.clipboard = ""
-vim.opt.spelllang=en_us
+vim.opt.clipboard = 'unnamedplus'

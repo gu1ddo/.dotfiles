@@ -84,12 +84,11 @@ alias wf_pull="find $FS -name .git -type d -execdir sh -c 'git pull &' {} \; ; c
 
 # PaFaze
 alias pf="python3 $FS/1_PARA/1_Projects/pafaze/app.py"
-alias pfa="pf -a"
-alias pff="pf -f"
-alias pfl="pf -l"
-
-
-
+alias pf-add="pf -a"
+alias pf-finish="pf -f"
+alias pf-list="pf -l"
+alias pf-swp="pf --swap"
+alias pf-changeIndex="pf --changeIndex"
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
