@@ -199,7 +199,7 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.opt.scrolloff = 8
 vim.opt.relativenumber = true
 vim.opt.swapfile = false
-lvim.transparent_window = true
+-- lvim.transparent_window = true
 
 vim.opt.linebreak = true
 vim.opt.cursorline = true
