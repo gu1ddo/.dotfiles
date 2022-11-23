@@ -78,8 +78,8 @@ alias gssb="git status -sb"
 
 
 # Workflow
-alias wf_status="find $FS -name .git -type d -execdir sh -c 'tput setaf 4; pwd ;tput sgr0; git status; echo "";echo ""' {} \; && tput setaf 4; cd ~/.dotfiles/;echo ''; pwd; tput sgr0; git status; cd ~ "
-alias wf_pull="find $FS -name .git -type d -execdir sh -c 'git pull &' {} \; ; cd ~/.dotfiles/;git pull &; cd ~ "
+alias wf-status="find $FS -name .git -type d -execdir sh -c 'tput setaf 4; pwd ;tput sgr0; git status; echo "";echo ""' {} \; && tput setaf 4; cd ~/.dotfiles/;echo ''; pwd; tput sgr0; git status; cd ~ "
+alias wf-pull="find $FS -name .git -type d -execdir sh -c 'git pull &' {} \; ; cd ~/.dotfiles/;git pull &; cd ~ "
 
 
 # PaFaze
@@ -89,6 +89,9 @@ alias pf-finish="pf -f"
 alias pf-list="pf -l"
 alias pf-swp="pf --swap"
 alias pf-changeIndex="pf --changeIndex"
+
+# Nerdfetch 
+alias nerdfetch='sh $projects/Scripts/nerdfetch/nerdfetch.sh'
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
