@@ -12,7 +12,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "dracula"
+lvim.colorscheme = "gruvbox-material"
 
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -169,6 +169,7 @@ lvim.builtin.treesitter.highlight.enable = true
 lvim.plugins = {
 
   { "mateusbraga/vim-spell-pt-br" },
+  { "julien/vim-colors-green" },
 
   { "dracula/vim" },
   { "Mofiqul/adwaita.nvim" },
