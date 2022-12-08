@@ -3,43 +3,53 @@ sudo nano /etc/dnf/dnf.conf
 max_parallel_downloads=10
 fastestmirror=True
 
+
 ## Animations
 
 gsettings set org.gnome.desktop.interface enable-animations false
 
+
 ## dotfiles
 git clone https://github.com/gu1ddo/.dotfiles
 ln -s .dotfiles/.zshrc .
+ln -s .dotfiles/.tmux.conf .
+ln -s .dotfiles/.p10k.zsh .
 
-sudo pacman-mirrors --fasttrack
 
-## SSD trim
-sudo systemctl status fstrim.timer
-sudo systemctl enable fstrim.timer
-sudo systemctl start fstrim.timer
+## Prompt
 
-sudo pacman -Syyuu
+https://ohmyz.sh/
 
-sudo pacman -S discord gnome-sudoku foliate obsidian virtualbox veracrypt obs-studio
+https://github.com/romkatv/powerlevel10k#oh-my-zsh
+
 
 ## Jet brains
 
 https://www.jetbrains.com/toolbox-app/
 
+
+## Rust
+
+https://www.rust-lang.org/learn/get-started
+
+
+## Nvm
+
+https://github.com/nvm-sh/nvm
+
+nvm install --lts
+
+
 ## Lunarvim
 
 https://github.com/LunarVim/LunarVim
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-sudo pacman -Syu git make pip python3 npm nodejs cargo
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-exec zsh
-nvm install --lts
-nvm use --lts
-rustup update
-LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 
-# Discord font
+## Docker
 
-https://forum.manjaro.org/t/howto-enable-emoji-fonts/36695https://forum.manjaro.org/t/howto-enable-emoji-fonts/36695
+https://developer.fedoraproject.org/tools/docker/docker-installation.html
 
+
+## Golang
+
+https://developer.fedoraproject.org/tech/languages/go/go-installation.html
