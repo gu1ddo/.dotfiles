@@ -8,6 +8,9 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# JAVA
+export JAVA_HOME=/usr/java/jdk-17.0.5/bin/java
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -25,6 +28,10 @@ export dotfiles="$HOME/.dotfiles"
 
 # General
 alias cl="clear"
+
+
+# Obsidian
+alias obsidian=./Apps/Obsidian/Obsidian.AppImage
 
 
 ## Lunarvim
