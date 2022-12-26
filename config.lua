@@ -10,7 +10,7 @@ an executable
 
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save.enabled = false
+lvim.format_on_save.enabled = true
 lvim.colorscheme = "lunar"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -18,9 +18,9 @@ lvim.colorscheme = "lunar"
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
-lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
--- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
--- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
+-- lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
 -- override a default keymapping
@@ -188,3 +188,19 @@ lvim.builtin.treesitter.highlight.enable = true
 -- Personal ---
 -- --
 vim.opt.title = false
+lvim.keys.insert_mode["jj"] = "<ESC>"
+vim.opt.backup = false
+vim.opt.clipboard = "unnamed"
+vim.opt.colorcolumn = "80,120"
+vim.opt.fileencoding = "utf-8"
+vim.opt.swapfile = false
+vim.opt.updatetime = 200
+vim.opt.relativenumber = true
+
+-- vim.opt.spell = true
+-- vim.opt.spelllang = "en"
+
+vim.opt.spelllang = "en"
+vim.opt.scrolloff = 8
+vim.opt.wrap = true
+vim.opt.textwidth = 120
