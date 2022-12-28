@@ -203,4 +203,4 @@ vim.opt.relativenumber = true
 vim.opt.spelllang = "en"
 vim.opt.scrolloff = 8
 vim.opt.wrap = true
-vim.opt.textwidth = 120
+vim.opt.textwidth = 80
