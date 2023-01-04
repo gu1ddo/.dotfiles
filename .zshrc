@@ -12,7 +12,7 @@ fi
 export PATH=$HOME/bin/:$PATH
 
 # JAVA
-export JAVA_HOME=/usr/java/jdk-17.0.5/bin/java
+export JAVA_HOME=/usr/java/jdk-17.0.5
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"

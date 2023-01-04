@@ -19,8 +19,8 @@ lvim.colorscheme = "lunar"
 lvim.leader = "space"
 -- add your own keymapping
 -- lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
-lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
-lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
+lvim.keys.normal_mode["<TAB>"] = ":BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["<S-TAB>"] = ":BufferLineCyclePrev<CR>"
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
 -- override a default keymapping
@@ -188,7 +188,6 @@ lvim.builtin.treesitter.highlight.enable = true
 -- Personal ---
 -- --
 vim.opt.title = false
-lvim.keys.insert_mode["jj"] = "<ESC>"
 vim.opt.backup = false
 vim.opt.clipboard = "unnamed"
 vim.opt.colorcolumn = "80,120"
@@ -203,4 +202,5 @@ vim.opt.relativenumber = true
 vim.opt.spelllang = "en"
 vim.opt.scrolloff = 8
 vim.opt.wrap = true
+vim.opt.linebreak = true
 vim.opt.textwidth = 80
