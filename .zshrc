@@ -36,6 +36,8 @@ alias cl="clear"
 # Obsidian
 alias obsidian=./Apps/Obsidian/Obsidian.AppImage
 
+# Postman
+alias postman=./Apps/postman-linux-x64/Postman/Postman
 
 ## Lunarvim
 export PATH="$HOME/.local/bin:$PATH"

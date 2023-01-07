@@ -9,8 +9,7 @@ nnoremap <SPACE> <Nop>
 let mapleader=" "
 
 " Set ESC
-"imap jk <Esc>
-"vmap jk <Esc>
+imap jk <Esc>
 
 nnoremap [[ :action MethodUp<CR>
 nnoremap ]] :action MethodDown<CR>
