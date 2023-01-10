@@ -161,7 +161,7 @@ lvim.plugins = {
     "tpope/vim-surround"
   },
   { "tpope/vim-repeat" },
-  { "sainnhe/sonokai" }
+  { "sainnhe/sonokai" },
 }
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- vim.api.nvim_create_autocmd("BufEnter", {
