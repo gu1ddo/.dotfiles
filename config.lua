@@ -196,6 +196,8 @@ vim.keymap.set("n", "Q", "<nop>")
 -- override a default keymapping
 -- lvim.keys.normal_mode["<C-q>"] = ":q<cr>" -- or vim.keymap.set("n", "<C-q>", ":q<cr>" )
 
+
+-- Personal
 vim.opt.title = false
 vim.opt.backup = false
 
@@ -216,3 +218,11 @@ vim.opt.linebreak = true
 vim.opt.textwidth = 80
 
 vim.opt.timeoutlen = 300
+
+vim.keymap.set("n", "L", "$")
+vim.keymap.set("n", "H", "^")
+
+-- Primegean
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("n", "J", "mzJ`z")
