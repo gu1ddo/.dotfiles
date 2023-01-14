@@ -54,11 +54,17 @@ alias gpush="git push"
 alias gst="git status"
 alias gss="git status -s "
 alias gssb="git status -sb"
-#
+
 # Nerdfetch 
 alias nerdfetch='sh $projects/Scripts/nerdfetch/nerdfetch.sh'
 
-export JAVA_HOME=/usr/java/jdk-17.0.5
+# zoxide
+eval "$(zoxide init zsh)"
+
+# Stoic
+alias stoic="evince ~/FileSystem/2_Attachments/Livros/Stoic/0-Daily_Journal.pdf&; evince ~/FileSystem/2_Attachments/Livros/Stoic/0-Daily_Meditations.pdf&"
+
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export PATH=~/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

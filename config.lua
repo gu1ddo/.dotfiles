@@ -11,7 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save.enabled = true
-lvim.colorscheme = "sonokai"
+lvim.colorscheme = "tokyonight"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
@@ -219,10 +219,13 @@ vim.opt.textwidth = 80
 
 vim.opt.timeoutlen = 300
 
-vim.keymap.set("n", "L", "$")
-vim.keymap.set("n", "H", "^")
-
 -- Primegean
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
 vim.keymap.set("n", "J", "mzJ`z")
+
+
+-- Transparent window
+
+vim.transparent_window = true
