@@ -11,7 +11,7 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save.enabled = true
-lvim.colorscheme = "tokyonight"
+lvim.colorscheme = "gruvbox-material"
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
@@ -162,6 +162,10 @@ lvim.plugins = {
   },
   { "tpope/vim-repeat" },
   { "sainnhe/sonokai" },
+
+  -- Themes
+  { "Mofiqul/adwaita.nvim" },
+  { "sainnhe/gruvbox-material" },
 }
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- vim.api.nvim_create_autocmd("BufEnter", {
@@ -177,17 +181,17 @@ lvim.plugins = {
 --   end,
 -- })
 
-
--- Personal ---
-
--- add your own keymapping
--- lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+--
+-- -- -- -- --
+-- Personal --
 
 lvim.keys.normal_mode["<TAB>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-TAB>"] = ":BufferLineCyclePrev<CR>"
 
 lvim.keys.normal_mode["<C-d>"] = "<C-d>zz"
 lvim.keys.normal_mode["<C-u>"] = "<C-u>zz"
+
+lvim.keys.normal_mode["<S-g>"] = "<S-g>zz"
 
 lvim.keys.insert_mode["jk"] = "<ESC>"
 
@@ -228,4 +232,4 @@ vim.keymap.set("n", "J", "mzJ`z")
 
 -- Transparent window
 
-vim.transparent_window = true
+vim.transparent_window = false

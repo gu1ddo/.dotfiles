@@ -62,7 +62,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  decorations: none
+  # decorations: none
 
   # Background opacity
   #
@@ -183,31 +183,55 @@ font:
 
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
-
+# Colors (Gruvbox Material Dark Medium)
 colors:
   primary:
-    background: "0x2c2e34"
-    foreground: "0xe2e2e3"
+    background: '0x282828'
+    foreground: '0xdfbf8e'
 
   normal:
-    black: "0x181819"
-    red: "0xfc5d7c"
-    green: "0x9ed072"
-    yellow: "0xe7c664"
-    blue: "0x76cce0"
-    magenta: "0xb39df3"
-    cyan: "0xf39660"
-    white: "0xe2e2e3"
+    black:   '0x665c54'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xe78a4e'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xdfbf8e'
 
   bright:
-    black: "0x7f8490"
-    red: "0xfc5d7c"
-    green: "0x9ed072"
-    yellow: "0xe7c664"
-    blue: "0x76cce0"
-    magenta: "0xb39df3"
-    cyan: "0xf39660"
-    white: "0xe2e2e3"
+    black:   '0x928374'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xe3a84e'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xdfbf8e'
+# colors:
+#   primary:
+#     background: "0x2c2e34"
+#     foreground: "0xe2e2e3"
+
+#   normal:
+#     black: "0x181819"
+#     red: "0xfc5d7c"
+#     green: "0x9ed072"
+#     yellow: "0xe7c664"
+#     blue: "0x76cce0"
+#     magenta: "0xb39df3"
+#     cyan: "0xf39660"
+#     white: "0xe2e2e3"
+
+#   bright:
+#     black: "0x7f8490"
+#     red: "0xfc5d7c"
+#     green: "0x9ed072"
+#     yellow: "0xe7c664"
+#     blue: "0x76cce0"
+#     magenta: "0xb39df3"
+#     cyan: "0xf39660"
+#     white: "0xe2e2e3"
 
 # Colors (Tomorrow Night)
 #colors:
