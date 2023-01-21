@@ -62,13 +62,13 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  # decorations: none
+  decorations: none
 
   # Background opacity
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  #opacity: 1.0
+  # opacity: 0.85
 
   # Startup Mode (changes require restart)
   #
@@ -99,7 +99,7 @@ window:
   # Override the variant of the GTK theme/Wayland client side decorations.
   # Commonly supported values are `dark` and `light`. Set this to `None` to use
   # the default theme variant.
-  decorations_theme_variant: dark
+  # decorations_theme_variant: dark
 
 #scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -125,40 +125,40 @@ font:
     style: Regular
 
   # Bold font face
-  bold:
+  # bold:
     # Font family
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: "NotoSansMono Nerd Font"
+    # family: "NotoSansMono Nerd Font"
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
+    # style: Bold
 
   # Italic font face
-  italic:
+  # italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: "NotoSansMono Nerd Font"
+    # family: "NotoSansMono Nerd Font"
 
     # The `style` can be specified to pick a specific face.
-    style: Italic
+    # style: Italic
 
   # Bold italic font face
-  bold_italic:
+  # bold_italic:
     # Font family
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: "NotoSansMono Nerd Font"
+    # family: "NotoSansMono Nerd Font"
 
     # The `style` can be specified to pick a specific face.
-    style: Bold Italic
+    # style: Bold Italic
 
   # Point size
-  size: 12.0
+  size: 18.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -183,55 +183,59 @@ font:
 
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
+
+# ##
 # Colors (Gruvbox Material Dark Medium)
-colors:
-  primary:
-    background: '0x282828'
-    foreground: '0xdfbf8e'
-
-  normal:
-    black:   '0x665c54'
-    red:     '0xea6962'
-    green:   '0xa9b665'
-    yellow:  '0xe78a4e'
-    blue:    '0x7daea3'
-    magenta: '0xd3869b'
-    cyan:    '0x89b482'
-    white:   '0xdfbf8e'
-
-  bright:
-    black:   '0x928374'
-    red:     '0xea6962'
-    green:   '0xa9b665'
-    yellow:  '0xe3a84e'
-    blue:    '0x7daea3'
-    magenta: '0xd3869b'
-    cyan:    '0x89b482'
-    white:   '0xdfbf8e'
 # colors:
 #   primary:
-#     background: "0x2c2e34"
-#     foreground: "0xe2e2e3"
+#     background: '0x282828'
+#     foreground: '0xdfbf8e'
 
 #   normal:
-#     black: "0x181819"
-#     red: "0xfc5d7c"
-#     green: "0x9ed072"
-#     yellow: "0xe7c664"
-#     blue: "0x76cce0"
-#     magenta: "0xb39df3"
-#     cyan: "0xf39660"
-#     white: "0xe2e2e3"
+#     black:   '0x665c54'
+#     red:     '0xea6962'
+#     green:   '0xa9b665'
+#     yellow:  '0xe78a4e'
+#     blue:    '0x7daea3'
+#     magenta: '0xd3869b'
+#     cyan:    '0x89b482'
+#     white:   '0xdfbf8e'
 
 #   bright:
-#     black: "0x7f8490"
-#     red: "0xfc5d7c"
-#     green: "0x9ed072"
-#     yellow: "0xe7c664"
-#     blue: "0x76cce0"
-#     magenta: "0xb39df3"
-#     cyan: "0xf39660"
-#     white: "0xe2e2e3"
+#     black:   '0x928374'
+#     red:     '0xea6962'
+#     green:   '0xa9b665'
+#     yellow:  '0xe3a84e'
+#     blue:    '0x7daea3'
+#     magenta: '0xd3869b'
+#     cyan:    '0x89b482'
+#     white:   '0xdfbf8e'
+# ##
+
+colors:
+  primary:
+    background: "#282828"
+    foreground: "#35FF35"
+
+  normal:
+    black: "#35FF35"
+    red: "#35FF35"
+    green: "#35FF35"
+    yellow: "#35FF35"
+    blue: "#35FF35"
+    magenta: "#35FF35"
+    cyan: "#35FF35"
+    white: "#35FF35"
+
+  bright:
+    black: "#35FF35"
+    red: "#35FF35"
+    green: "#35FF35"
+    yellow: "#35FF35"
+    blue: "#35FF35"
+    magenta: "#35FF35"
+    cyan: "#35FF35"
+    white: "#35FF35"
 
 # Colors (Tomorrow Night)
 #colors:

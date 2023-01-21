@@ -232,4 +232,5 @@ vim.keymap.set("n", "J", "mzJ`z")
 
 -- Transparent window
 
-vim.transparent_window = false
+lvim.transparent_window = true
+vim.opt.cursorline = false
