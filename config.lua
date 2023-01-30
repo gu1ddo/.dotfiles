@@ -83,13 +83,13 @@ lvim.builtin.treesitter.highlight.enable = true
 --     "sumneko_lua",
 --     "jsonls",
 -- }
--- -- change UI setting of `LspInstallInfo`
--- -- see <https://github.com/williamboman/nvim-lsp-installer#default-configuration>
+-- change UI setting of `LspInstallInfo`
+-- see <https://github.com/williamboman/nvim-lsp-installer#default-configuration>
 -- lvim.lsp.installer.setup.ui.check_outdated_servers_on_open = false
 -- lvim.lsp.installer.setup.ui.border = "rounded"
 -- lvim.lsp.installer.setup.ui.keymaps = {
---     uninstall_server = "d",
---     toggle_server_expand = "o",
+--   uninstall_server = "d",
+--   toggle_server_expand = "o",
 -- }
 
 -- ---@usage disable automatic installation of servers
@@ -106,6 +106,7 @@ lvim.builtin.treesitter.highlight.enable = true
 -- lvim.lsp.automatic_configuration.skipped_servers = vim.tbl_filter(function(server)
 --   return server ~= "emmet_ls"
 -- end, lvim.lsp.automatic_configuration.skipped_servers)
+
 
 -- -- you can set a custom on_attach function that will be used for all the language servers
 -- -- See <https://github.com/neovim/nvim-lspconfig#keybindings-and-completion>
@@ -166,20 +167,21 @@ lvim.plugins = {
   -- Themes
   { "Mofiqul/adwaita.nvim" },
   { "sainnhe/gruvbox-material" },
+  { "mfussenegger/nvim-jdtls" }
 }
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
--- vim.api.nvim_create_autocmd("BufEnter", {
---   pattern = { "*.json", "*.jsonc" },
---   -- enable wrap mode for json files only
---   command = "setlocal wrap",
--- })
--- vim.api.nvim_create_autocmd("FileType", {
---   pattern = "zsh",
---   callback = function()
---     -- let treesitter use bash highlight for zsh files as well
---     require("nvim-treesitter.highlight").attach(0, "bash")
---   end,
--- })
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = { "*.json", "*.jsonc" },
+  -- enable wrap mode for json files only
+  command = "setlocal wrap",
+})
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "zsh",
+  callback = function()
+    -- let treesitter use bash highlight for zsh files as well
+    require("nvim-treesitter.highlight").attach(0, "bash")
+  end,
+})
 
 --
 -- -- -- -- --
@@ -232,5 +234,5 @@ vim.keymap.set("n", "J", "mzJ`z")
 
 -- Transparent window
 
-lvim.transparent_window = true
+lvim.transparent_window = false
 vim.opt.cursorline = false

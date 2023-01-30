@@ -49,7 +49,7 @@ nnoremap <c-k> <c-w>k
 nnoremap <Leader>en :action EditSourceInNewWindow<CR>
 nnoremap <Leader>n :action NextWindow<CR>
 
-nnoremap <Leader>q :action CloseContent<CR>
+nnoremap <Leader>c :action CloseContent<CR>
 "nnoremap <Leader>qa :action CloseAllEditors<CR>
 
 " -------- Personal --------
