@@ -11,6 +11,9 @@ let mapleader=" "
 " Set ESC
 imap jk <Esc>
 
+vmap J :m '>+1<CR>gv=gv
+vmap K :m '<-2<CR>gv=gv
+
 nnoremap [[ :action MethodUp<CR>
 nnoremap ]] :action MethodDown<CR>
 
@@ -76,6 +79,9 @@ nmap N Nzz
 
 nmap <C-d> <C-d>zz
 nmap <C-u> <C-u>zz
+
+nmap o o<ESC>
+nmap O O<ESC>
 
 "Change to terminal
 "nmap <leader>t :action ActivateTerminalToolWindow<CR>
