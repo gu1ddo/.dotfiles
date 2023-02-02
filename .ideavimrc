@@ -80,9 +80,6 @@ nmap N Nzz
 nmap <C-d> <C-d>zz
 nmap <C-u> <C-u>zz
 
-nmap o o<ESC>
-nmap O O<ESC>
-
 "Change to terminal
 "nmap <leader>t :action ActivateTerminalToolWindow<CR>
 

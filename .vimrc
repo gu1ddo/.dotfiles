@@ -29,8 +29,8 @@ nmap <leader>q :q!<cr>
 nmap <leader>x :x<cr>
 
 map Y y$
-nmap o o<ESC>
-nmap O O<ESC>
+"nmap o o<ESC>
+"nmap O O<ESC>
 
 " https://vim.fandom.com/wiki/Moving_lines_up_or_down
 vmap J :m '>+1<CR>gv=gv

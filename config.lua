@@ -195,8 +195,8 @@ lvim.keys.normal_mode["<C-u>"] = "<C-u>zz"
 
 lvim.keys.normal_mode["<S-g>"] = "<S-g>zz"
 
-lvim.keys.normal_mode["o"] = "o<ESC>"
-lvim.keys.normal_mode["O"] = "O<ESC>"
+-- lvim.keys.normal_mode["o"] = "o<ESC>"
+-- lvim.keys.normal_mode["O"] = "O<ESC>"
 
 lvim.keys.insert_mode["jk"] = "<ESC>"
 
