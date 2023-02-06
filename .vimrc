@@ -35,6 +35,7 @@ call plug#begin(expand('~/.vim/plugged'))
 "" Plug install packages
 "*****************************************************************************
 Plug 'tpope/vim-surround'
+Plug 'cjuniet/clang-format.vim'
 
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
@@ -511,3 +512,10 @@ nmap <C-u> <C-u>zz
 map Y y$
 
 set noswapfile
+
+autocmd FileType c,cpp,objc vnoremap <Leader>= :ClangFormat<CR>
+autocmd FileType c,cpp,objc nnoremap <Leader>= :ClangFormat<CR>
+
+set colorcolumn=80
+nmap <s-q> <nop>
+vmap <s-q> <nop>
