@@ -104,11 +104,11 @@ set ignorecase smartcase
 
 "nmap <leader>h :noh<CR>
 
-nnoremap ,r :action ContextRun<CR>
-nnoremap ,c :action RunClass<CR>
-nnoremap ,f :action ChooseRunConfiguration<CR>
-nnoremap ,t :action ActivateRunToolWindowCR>
-nnoremap ,u :action Rerun<CR>
+nnoremap ,r :action Run<CR>
+"nnoremap ,c :action RunClass<CR>
+"nnoremap ,f :action ChooseRunConfiguration<CR>
+"nnoremap ,t :action ActivateRunToolWindowCR>
+"nnoremap ,u :action Rerun<CR>
 
 nnoremap ,f :action RerunFailedTests<CR>
 
