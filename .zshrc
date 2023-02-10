@@ -18,6 +18,10 @@ fi
 
 # --- Personal ---
 
+# Default editor
+
+export EDITOR=lvim;
+
 # Path
 export FS="$HOME/FileSystem"
 export inbox="$FS/0_Inbox"
