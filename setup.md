@@ -12,7 +12,6 @@ gsettings set org.gnome.desktop.interface enable-animations false
 ## dotfiles
 git clone https://github.com/gu1ddo/.dotfiles
 ln -s .dotfiles/.zshrc .
-ln -s .dotfiles/.tmux.conf .
 ln -s .dotfiles/.p10k.zsh .
 
 
@@ -55,4 +54,18 @@ https://developer.fedoraproject.org/tools/docker/docker-installation.html
 https://developer.fedoraproject.org/tech/languages/go/go-installation.html
 
 ## Java
-//TODO
+https://techviewleo.com/install-java-on-arch-manjaro-endeavouros/
+
+sudo pacman -S jdk17-openjdk
+archlinux-java status
+archlinux-java set <JAVA_ENV_NAME>
+
+## Maven
+
+package manager
+
+## Gradle
+
+package manager
+
+
