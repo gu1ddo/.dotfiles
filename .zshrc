@@ -70,7 +70,7 @@ alias gssb="git status -sb"
 alias nerdfetch='sh $projects/Scripts/nerdfetch/nerdfetch.sh'
 
 # zoxide
-eval "$(zoxide init zsh)"
+# eval "$(zoxide init zsh)"
 
 # Stoic
 alias stoic="evince ~/FileSystem/2_Attachments/Livros/Stoic/0-Daily_Journal.pdf&; evince ~/FileSystem/2_Attachments/Livros/Stoic/0-Daily_Meditations.pdf&"

@@ -198,7 +198,7 @@ lvim.keys.normal_mode["<S-g>"] = "<S-g>zz"
 -- lvim.keys.normal_mode["o"] = "o<ESC>"
 -- lvim.keys.normal_mode["O"] = "O<ESC>"
 
-lvim.keys.insert_mode["jk"] = "<ESC>"
+-- lvim.keys.insert_mode["jk"] = "<ESC>"
 
 -- unmap a default keymapping
 vim.keymap.set("n", "Q", "<nop>")
@@ -233,7 +233,6 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set("n", "J", "mzJ`z")
-
 
 -- Transparent window
 
