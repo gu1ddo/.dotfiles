@@ -2,14 +2,13 @@
 "https://towardsdatascience.com/the-essential-ideavim-remaps-291d4cd3971b
 ""
 
-" Assert space is mapped
+" -- Assert space is mapped
 nnoremap <SPACE> <Nop>
 
-" Set leader key as SPACE
+" -- Set leader key as SPACE
 let mapleader=" "
 
-" Set ESC
-imap jk <Esc>
+"imap jk <Esc>
 
 vmap J :m '>+1<CR>gv=gv
 vmap K :m '<-2<CR>gv=gv
@@ -25,21 +24,22 @@ nnoremap <leader>zo :action ExpandAllRegions<CR>
 nnoremap <leader>/ :action CommentByLineComment<CR>
 vnoremap <leader>/ :action CommentByLineComment<CR>
 
-nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>R :action Refactorings.QuickListPopupAction<CR>
+vmap <leader>rm :action ExtractMethod<cr>
+nmap <leader>rr :action RenameElement<cr>
+nmap <leader>rg :action Generate<cr>
 nnoremap <Leader>= :action ReformatCode<CR>
 
 nnoremap <leader>o :action OptimizeImports<CR>
 
 nnoremap <c-r> :action RecentFiles<CR>
-nnoremap <leader>l :action RecentLocations<CR>
-nnoremap <leader>h  :action LocalHistory.ShowHistory<CR>
 
 nnoremap ge :action GotoNextError<CR>
 nnoremap gE :action GotoPreviousError<CR>
 
 nnoremap <c-\> :action SplitVertically<CR>
 nnoremap <c--> :action SplitHorizontally<CR>
-"nnoremap <c-=> :action Unsplit<CR>
+nnoremap <c-=> :action Unsplit<CR>
 nnoremap <c-m> :action MoveEditorToOppositeTabGroup<CR>
 
 sethandler <c-j> a:vim
@@ -49,72 +49,85 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
-nnoremap <Leader>en :action EditSourceInNewWindow<CR>
-nnoremap <Leader>n :action NextWindow<CR>
 
-nnoremap <Leader>c :action CloseContent<CR>
-"nnoremap <Leader>qa :action CloseAllEditors<CR>
+nnoremap <Leader>q :action CloseContent<CR>
 
-" -------- Personal --------
+" Navigation
+nmap <leader>u :action FindUsages<cr>
+nmap <leader>b :action ShowBookmarks<cr>
+nmap <leader>t :action GotoTest<cr>
+nmap <leader>i :action GotoImplementation<cr>
+nmap <leader>f :action GotoFile<cr>
+nmap <leader>c :action GotoClass<cr>
+nmap <leader>s :action GotoSymbol<cr>
+nmap <leader>m :action ToggleBookmark<cr>
+nmap <leader>b :action ShowBookmarks<cr>
+
+
+" -- Personal --
+
 nnoremap Y y$
 set highlightedyank
 let g:highlightedyank_highlight_duration = "150"
 
-"NerdTree
+" -- These create newlines like o and O but stay in normal mode
+nmap zj o<Esc>
+nmap zk O<Esc>
+
+" -- Scroll and Center
+nmap n nzz
+nmap N Nzz
+nmap <C-d> <C-d>zz
+nmap <C-u> <C-u>zz
+
+" -- Tabs
+nmap <TAB> :action NextTab<CR>
+nmap <S-TAB> :action PreviousTab<CR>
+
+" -- Split window
+nmap <leader>v :action SplitVertically<CR>
+
+" -- Cursor don't go all the way to top/bottom
+set scrolloff=5
+
+" -- Relative numbers for better vertical navigation
+set number relativenumber
+
+" -- No error bell from ideavim
+set visualbell
+set hlsearch
+set incsearch
+set ignorecase smartcase
+nmap <leader>h :noh<CR>
+
+
+" -- Plugins
+
+" - NerdTree
 "set nerdtree
 "nmap <leader>e :NERDTreeToggle<CR>
 
-" Commentary
+" - Commentary
 set commentary
 
 " Surround
 set surround
 
-" Multiple Cursors
-" set multiple-cursors
 
-" scroll and center
-nmap n nzz
-nmap N Nzz
-
-nmap <C-d> <C-d>zz
-nmap <C-u> <C-u>zz
-
-"Change to terminal
-"nmap <leader>t :action ActivateTerminalToolWindow<CR>
-
-" Tabs
-nmap <TAB> :action NextTab<CR>
-nmap <S-TAB> :action PreviousTab<CR>
-
-"Split window
-nmap <leader>v :action SplitVertically<CR>
-
-" Cursor don't go all the way to top/bottom
-set scrolloff=5
-
-" Relative numbers for better vertical navigation
-set number relativenumber
-
-" No error bell from ideavim
-set visualbell
-set hlsearch
-set incsearch
-set ignorecase smartcase
-
-"nmap <leader>h :noh<CR>
+" -- Run and test --
 
 nnoremap ,r :action Run<CR>
-"nnoremap ,c :action RunClass<CR>
+nnoremap ,c :action RunClass<CR>
 "nnoremap ,f :action ChooseRunConfiguration<CR>
 "nnoremap ,t :action ActivateRunToolWindowCR>
-"nnoremap ,u :action Rerun<CR>
+nnoremap ,u :action Rerun<CR>
 
 nnoremap ,f :action RerunFailedTests<CR>
 
 nnoremap ,b :action ToggleLineBreakpoint<CR>
 nnoremap ,d :action ContextDebug<CR>
 nnoremap ,n :action ActivateDebugToolWindow<CR>
+
 
 " ----- Built in help ------
 
