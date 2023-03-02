@@ -2,57 +2,52 @@
 "https://towardsdatascience.com/the-essential-ideavim-remaps-291d4cd3971b
 ""
 
-" -- Assert space is mapped
+" ### Leader Key ###
+" Assert space is mapped
 nnoremap <SPACE> <Nop>
-
-" -- Set leader key as SPACE
 let mapleader=" "
 
-"imap jk <Esc>
 
-vmap J :m '>+1<CR>gv=gv
-vmap K :m '<-2<CR>gv=gv
-
-nnoremap [[ :action MethodUp<CR>
-nnoremap ]] :action MethodDown<CR>
-
-nnoremap zc :action CollapseRegion<CR>
-nnoremap zo :action ExpandRegion<CR>
-nnoremap <leader>zc :action CollapseAllRegions<CR>
-nnoremap <leader>zo :action ExpandAllRegions<CR>
-
+" ### Comment ###
 nnoremap <leader>/ :action CommentByLineComment<CR>
 vnoremap <leader>/ :action CommentByLineComment<CR>
 
+" ### Refactor ###
+nnoremap <Leader>= :action ReformatCode<CR>
 nnoremap <leader>R :action Refactorings.QuickListPopupAction<CR>
-vmap <leader>rm :action ExtractMethod<cr>
 nmap <leader>rr :action RenameElement<cr>
 nmap <leader>rg :action Generate<cr>
-nnoremap <Leader>= :action ReformatCode<CR>
-
 nnoremap <leader>o :action OptimizeImports<CR>
+vmap <leader>rm :action ExtractMethod<cr>
 
-nnoremap <c-r> :action RecentFiles<CR>
-
+" ### Errors ###
 nnoremap ge :action GotoNextError<CR>
 nnoremap gE :action GotoPreviousError<CR>
 
-nnoremap <c-\> :action SplitVertically<CR>
+" ### Editor ###
+nnoremap <c-=> :action SplitVertically<CR>
 nnoremap <c--> :action SplitHorizontally<CR>
-nnoremap <c-=> :action Unsplit<CR>
+nnoremap <c-\> :action Unsplit<CR>
 nnoremap <c-m> :action MoveEditorToOppositeTabGroup<CR>
 
-sethandler <c-j> a:vim
-sethandler <c-k> a:vim
-
+" Move around splits
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 
+sethandler <c-j> a:vim
+sethandler <c-k> a:vim
+
+" Close active split
 nnoremap <Leader>q :action CloseContent<CR>
 
-" Navigation
+" ### Navigation ###
+nnoremap <c-r> :action RecentFiles<CR>
+
+nnoremap [[ :action MethodUp<CR>
+nnoremap ]] :action MethodDown<CR>
+
 nmap <leader>u :action FindUsages<cr>
 nmap <leader>b :action ShowBookmarks<cr>
 nmap <leader>t :action GotoTest<cr>
@@ -63,9 +58,11 @@ nmap <leader>s :action GotoSymbol<cr>
 nmap <leader>m :action ToggleBookmark<cr>
 nmap <leader>b :action ShowBookmarks<cr>
 
+" -- Tabs
+nmap <TAB> :action NextTab<CR>
+nmap <S-TAB> :action PreviousTab<CR>
 
-" -- Personal --
-
+" ### Extras ###
 nnoremap Y y$
 set highlightedyank
 let g:highlightedyank_highlight_duration = "150"
@@ -74,21 +71,14 @@ let g:highlightedyank_highlight_duration = "150"
 nmap zj o<Esc>
 nmap zk O<Esc>
 
-" -- Scroll and Center
+" ### Scroll and Center ###
 nmap n nzz
 nmap N Nzz
 nmap <C-d> <C-d>zz
 nmap <C-u> <C-u>zz
 
-" -- Tabs
-nmap <TAB> :action NextTab<CR>
-nmap <S-TAB> :action PreviousTab<CR>
-
-" -- Split window
-nmap <leader>v :action SplitVertically<CR>
-
 " -- Cursor don't go all the way to top/bottom
-set scrolloff=5
+set scrolloff=3
 
 " -- Relative numbers for better vertical navigation
 set number relativenumber
@@ -101,13 +91,15 @@ set ignorecase smartcase
 nmap <leader>h :noh<CR>
 
 
-" -- Plugins
+" ### Plugins ###
 
-" - NerdTree
-"set nerdtree
-"nmap <leader>e :NERDTreeToggle<CR>
+" Sneak
+Plug 'justinmk/vim-sneak'
+set sneak
 
-" - Commentary
+" NerdTree
+
+" Commentary
 set commentary
 
 " Surround
@@ -128,6 +120,11 @@ nnoremap ,b :action ToggleLineBreakpoint<CR>
 nnoremap ,d :action ContextDebug<CR>
 nnoremap ,n :action ActivateDebugToolWindow<CR>
 
+" ### ExpandCollapse ###
+nnoremap zc :action CollapseRegion<CR>
+nnoremap zo :action ExpandRegion<CR>
+nnoremap <leader>zc :action CollapseAllRegions<CR>
+nnoremap <leader>zo :action ExpandAllRegions<CR>
 
 " ----- Built in help ------
 
