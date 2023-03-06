@@ -4,9 +4,9 @@
 
 " ### Leader Key ###
 " Assert space is mapped
+
 nnoremap <SPACE> <Nop>
 let mapleader=" "
-
 
 " ### Comment ###
 nnoremap <leader>/ :action CommentByLineComment<CR>
@@ -30,16 +30,14 @@ nnoremap <c--> :action SplitHorizontally<CR>
 nnoremap <c-\> :action Unsplit<CR>
 nnoremap <c-m> :action MoveEditorToOppositeTabGroup<CR>
 
-" Move around splits
+" ### Move around splits ###
+sethandler <c-j> a:vim
+sethandler <c-k> a:vim
+
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
-
-sethandler <c-j> a:vim
-sethandler <c-k> a:vim
-
-" Close active split
 nnoremap <Leader>q :action CloseContent<CR>
 
 " ### Navigation ###
@@ -58,7 +56,8 @@ nmap <leader>s :action GotoSymbol<cr>
 nmap <leader>m :action ToggleBookmark<cr>
 nmap <leader>b :action ShowBookmarks<cr>
 
-" -- Tabs
+" ### Tabs ###
+
 nmap <TAB> :action NextTab<CR>
 nmap <S-TAB> :action PreviousTab<CR>
 
@@ -66,10 +65,6 @@ nmap <S-TAB> :action PreviousTab<CR>
 nnoremap Y y$
 set highlightedyank
 let g:highlightedyank_highlight_duration = "150"
-
-" -- These create newlines like o and O but stay in normal mode
-nmap zj o<Esc>
-nmap zk O<Esc>
 
 " ### Scroll and Center ###
 nmap n nzz
@@ -92,19 +87,16 @@ nmap <leader>h :noh<CR>
 
 
 " ### Plugins ###
-
 " Sneak
 Plug 'justinmk/vim-sneak'
 set sneak
 
-" NerdTree
 
 " Commentary
 set commentary
 
 " Surround
 set surround
-
 
 " -- Run and test --
 
@@ -113,14 +105,13 @@ nnoremap ,c :action RunClass<CR>
 "nnoremap ,f :action ChooseRunConfiguration<CR>
 "nnoremap ,t :action ActivateRunToolWindowCR>
 nnoremap ,u :action Rerun<CR>
-
 nnoremap ,f :action RerunFailedTests<CR>
-
 nnoremap ,b :action ToggleLineBreakpoint<CR>
 nnoremap ,d :action ContextDebug<CR>
 nnoremap ,n :action ActivateDebugToolWindow<CR>
 
 " ### ExpandCollapse ###
+
 nnoremap zc :action CollapseRegion<CR>
 nnoremap zo :action ExpandRegion<CR>
 nnoremap <leader>zc :action CollapseAllRegions<CR>
