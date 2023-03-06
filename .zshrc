@@ -18,6 +18,10 @@ fi
 
 # --- Personal ---
 
+# Mkdir cd
+
+take() {mkdir -p $1; cd $1}
+
 # Default editor
 
 export EDITOR=lvim;
@@ -34,15 +38,13 @@ export workflow="$FS/Workflow"
 export dotfiles="$HOME/.dotfiles"
 
 # exa // ls replacement
-
 alias l="exa -lh"
 alias la="exa -lah"
 alias lt="exa -TL"
 alias lta="exa -TLa"
 
 # bat // cat replacement
-
-alias cat="bat"
+# alias cat="bat"
 
 # Git 
 alias gconfig="git config --list"
